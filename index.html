@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marilyn's Kitchen</title>
+    <title>Meryl's Kitchen</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" />
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
@@ -14,13 +14,12 @@
     </script>
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="header">
-        <div class="container">
+    <main class='site-page' id= ' '>
+        <header class='header'>
+            <div class="logo">
+                <img src="./assets/logo.jpg" alt="Logo">
+            </div>
             <nav class="navbar">
-                <div class="logo">
-                    <img src="./assets/logo.jpg" alt="Logo">
-                </div>
                 <ul class="nav-links">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -34,42 +33,41 @@
                     <span></span>
                 </div>
             </nav>
-        </div>
-    </header>
+        </header>
 
-    <!-- Main Section -->
-    <main>
         <!-- Hero Section -->
         <section class="hero">
-            <div class="container">
-                <h1 class="container-header">Welcome to Marilyn's Kitchen</h1>
-                <p>Tagline or description goes here.</p>
-                <button class="cta-button">View Menu</button>
-            </div>
+            <h1 class="container-header">Welcome to Meryl's Kitchen</h1>
+            <p>Tagline or description goes here.</p>
+            <button class="cta-button">View Menu</button>
         </section>
 
         <!-- Services Section -->
         <section class="services">
-            <div class="container">
                 <h2>Our Services</h2>
                 <div class="service-item">
                     <img src="./assets/img2.jpg" alt="Service 1">
-                    <h3>Mobile Kitchen</h3>
-                    <p>Description of service 1.</p>
+                    <div class='service-item-details'>
+                        <h3>Mobile Kitchen</h3>
+                        <p>Description of service 1.</p>
+                    </div>
                 </div>
                 <div class="service-item">
                     <img src="./assets/img2.jpg" alt="Service 2">
-                    <h3>Catering</h3>
-                    <p>Description of service 2.</p>
+                    <div class='service-item-details'>
+                        <h3>Catering</h3>
+                        <p>Description of service 2.</p>
+                    </div>
                 </div>
                 <div class="service-item">
                     <img src="./assets/img2.jpg" alt="Service 3">
-                    <h3>Party / Hosting</h3>
-                    <p>Description of service 3.</p>
+                    <div class='service-item-details'>
+                        <h3>Party / Hosting</h3>
+                        <p>Description of service 3.</p>
+                    </div>
                 </div>
-            </div>
         </section>
-
+        
         <!-- Portfolio Section -->
         <section class="portfolio">
             <div class="container">
@@ -77,14 +75,15 @@
                 <div class="portfolio-item">
                     <img src="./assets/ph2.png" alt="Portfolio 1">
                     <h3>Marilyn Gooch</h3>
+                    <p>Some info</p>
                 </div>
             </div>
         </section>
-
+        
         <!-- Contact Section -->
         <section class="contact">
             <div class="container">
-                <h2>Contact Us</h2>
+                <h2>Catering or Event Needs? Contact Us!</h2>
                 <form>
                     <input type="text" placeholder="Your Name" required>
                     <input type="email" placeholder="Your Email" required>
@@ -93,18 +92,16 @@
                 </form>
             </div>
         </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; Marilyn's Kitchen. All rights reserved.</p>
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; Meryl's Kitchen. All rights reserved.</p>
+            </div>
+        </footer>
+        <div class="fds-footer">
+            <p class="tagline">🏆 Greatness Magnified - An FDS Lifestyle</p>
         </div>
-    </footer>
-    <div class="fds-footer">
-        <p class="tagline">🏆 Greatness Magnified - An FDS Lifestyle</p>
-    </div>
-
+    </main> 
     <script src="script.js"></script>
 </body>
 </html>

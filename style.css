@@ -4,34 +4,42 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-.container {
-    width: 80%;
+.site-page {
     margin: auto;
     overflow: hidden;
-}
-
-/* Header Section */
-.header {
-    color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: slategray 3px solid;
-}
-
-.header .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
+
+.header {
+    display: flex;
+    background-color: #fff;
+    height: fit-content;
+    border-bottom: slategray 3px solid;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header img {
+    height: 125px;
+    width: 150px;
+    margin: 20px;
+    border-radius: 5px;
+ 
+}
+
+.navbar {
+    margin-right: 2em;
+}
+
 
 .navbar ul {
     padding: 0;
     list-style: none;
     display: flex;
+    width: max-content;
 }
 
 .navbar ul li {
@@ -40,13 +48,11 @@ body {
 }
 
 .navbar ul li a {
-    color: #fff;
+    color: black;
     text-decoration: none;
+    font-size: large;
 }
 
-.logo img {
-    height: 150px;
-}
 
 .mobile-nav-toggle {
     display: none;
@@ -64,9 +70,9 @@ body {
 /* Hero Section */
 .hero {
     background: url('./assets/img1.jpg') no-repeat center center/cover;
-    color: #fff;
     height: 600px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -80,6 +86,7 @@ body {
 
 .hero p {
     font-size: 24px;
+    color: #fff;
 }
 
 .cta-button {
@@ -94,24 +101,33 @@ body {
 
 /* Services Section */
 .services {
-    background: #f4f4f4;
-    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    text-align: center;
+    padding-left: 65px;
+    align-items: center;
 }
 
-.services .container {
-    text-align: center;
-}
+
 
 .service-item {
-    display: inline-block;
-    width: 30%;
-    margin: 20px 1.5%;
+    display: flex;
     vertical-align: top;
+    align-self: center;
+}
+
+.service-item-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
 }
 
 .service-item img {
     width: 100px;
     height: 100px;
+    border-radius: 4px;
+    margin-right: 10px;
 }
 
 /* Portfolio Section */
