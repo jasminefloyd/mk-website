@@ -250,6 +250,46 @@ section {
     border-radius: 8px;
 }
 
+/* Mobile Kitchen Locator Widget */
+.mobile-kitchen-locator {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Add margin to separate it from content above */
+}
+
+.mobile-kitchen-locator h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color:  #00E1F5;
+    text-align: center;
+}
+
+.mobile-kitchen-locator p,
+.mobile-kitchen-locator li {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.mobile-kitchen-locator ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.mobile-kitchen-locator ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+
 .contact {
     background: #f4f4f4;
     padding: 50px 0;
@@ -420,6 +460,19 @@ footer {
     .contact input, .contact textarea {
         font-size: 1.1rem;
         padding: 1rem;
+    }
+
+    .mobile-kitchen-locator {
+        padding: 10px;
+    }
+
+    .mobile-kitchen-locator h3 {
+        font-size: 1rem;
+    }
+
+    .mobile-kitchen-locator p,
+    .mobile-kitchen-locator li {
+        font-size: 0.9rem;
     }
     
     
