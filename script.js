@@ -10,25 +10,22 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Popup functionality
-    const viewMenuButton = document.getElementById('view-menu-button');
-    const menuPopup = document.getElementById('menu-popup');
-    const closeButton = document.querySelector('.close-button');
+    const openPopupButton = document.getElementById('openPopupButton');
+    const popup = document.getElementById('popup');
+    const closePopup = document.getElementById('closePopup');
 
-    viewMenuButton.addEventListener('click', function (e) {
-        e.preventDefault();
-        menuPopup.style.display = 'flex';
+    // Function to open the popup
+    openPopupButton.addEventListener('click', () => {
+        popup.style.display = 'flex';
     });
 
-    closeButton.addEventListener('click', function () {
-        menuPopup.style.display = 'none';
+    // Function to close the popup
+    closePopup.addEventListener('click', () => {
+        popup.style.display = 'none';
     });
 
-    window.addEventListener('click', function (e) {
-        if (e.target === menuPopup) {
-            menuPopup.style.display = 'none';
-        }
-    });
+    
+
 
     // Carousel functionality
     let slideIndex = 0;

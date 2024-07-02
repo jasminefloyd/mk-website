@@ -360,6 +360,8 @@ footer {
     border-radius: 8px;
     width: 90%;
     max-width: 600px;
+    height: 80%; /* Fixed height for the popup content */
+    overflow: auto; /* Allow the content to be scrollable */
     text-align: center;
     position: relative;
 }
@@ -385,6 +387,7 @@ footer {
     font-size: 1.5rem;
     cursor: pointer;
 }
+
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
