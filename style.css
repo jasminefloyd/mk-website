@@ -171,14 +171,20 @@ section {
 .portfolio-item img {
     width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
 .testimonials {
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .testimonial-item {
     display: flex;
+    flex-direction: column;
     align-items: center;
     margin-bottom: 2rem;
     width: 85%;
